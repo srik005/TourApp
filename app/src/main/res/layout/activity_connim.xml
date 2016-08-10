@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:text="Connemara Public Library at Egmore in Chennai, Tamil Nadu, India, is one of the four National Depository Libraries which receive a copy of all books, newspapers and periodicals published in India. Established in 1890, the library is a repository of centuries-old publications, wherein lie some of the most respected works and collections in the country.\nIt also serves as a depository library for the UN.\nThe library, however, is not a registered member of the International Federation of Library Associations and Institutions"/>
+</LinearLayout>

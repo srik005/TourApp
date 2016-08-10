@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    tools:context="srikanth.tourapp.MainActivity">
+
+    <TextView
+        android:id="@+id/tvOne"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#b71c1c"
+        android:background="#8BC34A"
+        android:text="@string/trichy" />
+
+    <TextView
+        android:id="@+id/tvTwo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="#FF9100"
+        android:textColor="#b71c1c"
+        android:text="@string/chennai" />
+
+    <TextView
+        android:id="@+id/tvThree"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:background="#795548"
+        android:textColor="#64DD17"
+        android:text="@string/madurai" />
+
+    <TextView
+        android:id="@+id/tvFour"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="#827717"
+        android:textColor="#64DD17"
+        android:text="@string/coimbatore" />
+</LinearLayout>

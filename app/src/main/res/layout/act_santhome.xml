@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:text="San Thome Basilica (Tamil: சாந்தோம் பசிலிக்கா, Cān-Tōm Pacilikkā; Portuguese: Basílica de São Tomé) is a Roman Catholic (Latin Rite) minor basilica in Santhome, in the city of Chennai (Madras), India.\n It was built in the 16th century by Portuguese explorers, over the tomb of St Thomas, an apostle of Jesus, after demolishing the original Kapaleeshwarar Temple which stood on the present site. In 1893, it was rebuilt as a church with the status of a cathedral by the British.\nThe British version still stands today. It was designed in Neo-Gothic style, favoured by British architects in the late 19th century."/>
+
+</LinearLayout>
