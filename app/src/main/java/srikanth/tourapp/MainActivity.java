@@ -7,55 +7,51 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
-    private ListView lView;
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView trText = (TextView) findViewById(R.id.tvOne);
-        TextView chText = (TextView) findViewById(R.id.tvTwo);
-        TextView maText = (TextView) findViewById(R.id.tvThree);
-        TextView coText = (TextView) findViewById(R.id.tvFour);
+        TextView tvOne= (TextView) findViewById(R.id.tvOne);
+        TextView tvTwo= (TextView) findViewById(R.id.tvTwo);
+        TextView tvThree= (TextView) findViewById(R.id.tvThree);
+        TextView tvFour= (TextView) findViewById(R.id.tvFour);
 
+        if (tvOne != null) {
+            tvOne.setOnClickListener(this);
+        }
+        if (tvTwo != null) {
+            tvTwo.setOnClickListener(this);
+        }
+        if (tvThree != null) {
+            tvThree.setOnClickListener(this);
+        }
+        if (tvFour != null) {
+            tvFour.setOnClickListener(this);
+        }
+    }
 
-        if (trText != null) {
-            trText.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent trIntent = new Intent(MainActivity.this, TrActivity.class);
-                    startActivity(trIntent);
-                }
-            });
-        }
-        if (chText != null) {
-            chText.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent trIntent = new Intent(MainActivity.this, ChenActivity.class);
-                    startActivity(trIntent);
-                }
-            });
-        }
-        if (maText != null) {
-            maText.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent trIntent = new Intent(MainActivity.this, MadActivity.class);
-                    startActivity(trIntent);
-                }
-            });
-        }
-        if (coText != null) {
-            coText.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent trIntent = new Intent(MainActivity.this, CoimActivity.class);
-                    startActivity(trIntent);
-                }
-            });
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.tvOne:
+                Intent trIntent = new Intent(MainActivity.this, TrActivity.class);
+                startActivity(trIntent);
+                break;
+            case R.id.tvTwo:
+                Intent chIntent = new Intent(MainActivity.this, ChenActivity.class);
+                startActivity(chIntent);
+                break;
+            case R.id.tvThree:
+                Intent madIntent = new Intent(MainActivity.this, MadActivity.class);
+                startActivity(madIntent);
+                break;
+            case R.id.tvFour:
+                Intent fourIntent = new Intent(MainActivity.this, CoimActivity.class);
+                startActivity(fourIntent);
+
         }
     }
 }

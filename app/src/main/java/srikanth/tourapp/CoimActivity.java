@@ -24,17 +24,17 @@ public class CoimActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
-        ArrayList<LocList> arrLoc = new ArrayList<>();
-        arrLoc.add(new LocList(getString(R.string.mk_falls), R.drawable.monkfal));
-        arrLoc.add(new LocList(getString(R.string.bla_thu), R.drawable.bthunder));
-        arrLoc.add(new LocList(getString(R.string.sir_fall), R.drawable.siruvani));
-        arrLoc.add(new LocList(getString(R.string.ko_fal), R.drawable.kovaikut));
-        arrLoc.add(new LocList(getString(R.string.vel_hills), R.drawable.vellingiri));
+        ArrayList<Location> arrLoc = new ArrayList<>();
+        arrLoc.add(new Location(getString(R.string.mk_falls), R.drawable.monkfal));
+        arrLoc.add(new Location(getString(R.string.bla_thu), R.drawable.bthunder));
+        arrLoc.add(new Location(getString(R.string.sir_fall), R.drawable.siruvani));
+        arrLoc.add(new Location(getString(R.string.ko_fal), R.drawable.kovaikut));
+        arrLoc.add(new Location(getString(R.string.vel_hills), R.drawable.vellingiri));
 
-        CustomClass customClass = new CustomClass(this, arrLoc);
+        CustomClassAdapter customClassAdapter = new CustomClassAdapter(this, arrLoc);
         ListView lView = (ListView) findViewById(R.id.listView);
         if (lView != null) {
-            lView.setAdapter(customClass);
+            lView.setAdapter(customClassAdapter);
             lView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

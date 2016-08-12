@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginLeft="8dp"
     android:layout_marginRight="8dp"
-    android:layout_marginTop="16dp"
-    android:orientation="vertical">
+    android:layout_marginTop="16dp">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Srirangam is famous for its Sri Ranganathaswamy Temple, a major pilgrimage destination for Hindus (especially Srivaishnavites) and the largest temple complex in India.
-According to the temple's website, Srirangam can be considered the biggest functioning Hindu temple in the world, as it covers an area of about 631,000 square metres (6,790,000 sq ft) with a perimeter of 4 km (10,710 ft).[1] Angkor Wat is bigger but non-functioning.
-Srirangam among a few  shrines (Swayam Vyakta Kshetras) of Lord Vishnu. The temple is enormous in size. The temple complex is 156 acres (0.63 km2) in extent. It has seven prakaras or enclosures. These enclosures are formed by thick and huge rampart walls which run round the sanctum. There are 21 magnificent towers in all prakaras providing a unique sight to any visitor. The temple town lies on an islet formed by the twin rivers Cauvery and Coleroon.
-
-The Srirangam temple complex is composed of 7 concentric walled sections and 21 towers gopuram.The gopuram of the temple is called the Rajagopuram and is 236 feet (72 m) tall, the tallest in Asia."
+        android:text="@string/txt_sr_description"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp" />
 
-</LinearLayout>
+</ScrollView>

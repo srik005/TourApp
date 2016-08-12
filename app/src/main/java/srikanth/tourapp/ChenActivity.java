@@ -1,6 +1,5 @@
 package srikanth.tourapp;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -23,17 +22,17 @@ public class ChenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
-        ArrayList<LocList> arrLoc = new ArrayList<>();
-        arrLoc.add(new LocList(getString(R.string.matina), R.drawable.marina));
-        arrLoc.add(new LocList(getString(R.string.san_chur), R.drawable.stthomas));
-        arrLoc.add(new LocList(getString(R.string.conn_lib), R.drawable.connimera));
-        arrLoc.add(new LocList(getString(R.string.anna_zoo), R.drawable.anna_park));
-        arrLoc.add(new LocList(getString(R.string.puli_lak), R.drawable.puli));
+        ArrayList<Location> arrLoc = new ArrayList<>();
+        arrLoc.add(new Location(getString(R.string.matina), R.drawable.marina));
+        arrLoc.add(new Location(getString(R.string.san_chur), R.drawable.stthomas));
+        arrLoc.add(new Location(getString(R.string.conn_lib), R.drawable.connimera));
+        arrLoc.add(new Location(getString(R.string.anna_zoo), R.drawable.anna_park));
+        arrLoc.add(new Location(getString(R.string.puli_lak), R.drawable.puli));
 
-        CustomClass customClass = new CustomClass(this, arrLoc);
+        CustomClassAdapter customClassAdapter = new CustomClassAdapter(this, arrLoc);
         ListView lView = (ListView) findViewById(R.id.listView);
         if (lView != null) {
-            lView.setAdapter(customClass);
+            lView.setAdapter(customClassAdapter);
             lView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

@@ -17,17 +17,17 @@ public class TrActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
-        ArrayList<LocList> arrLoc = new ArrayList<>();
-        arrLoc.add(new LocList(getString(R.string.txt_sr), R.drawable.srr));
-        arrLoc.add(new LocList(getString(R.string.txt_pul), R.drawable.puli));
-        arrLoc.add(new LocList(getString(R.string.txt_nit), R.drawable.kalanai));
-        arrLoc.add(new LocList(getString(R.string.txt_muk), R.drawable.mkombu));
-        arrLoc.add(new LocList(getString(R.string.txt_rock), R.drawable.rock));
+        ArrayList<Location> arrLoc = new ArrayList<>();
+        arrLoc.add(new Location(getString(R.string.txt_sr),R.drawable.srr));
+        arrLoc.add(new Location(getString(R.string.txt_pul), R.drawable.puli));
+        arrLoc.add(new Location(getString(R.string.txt_nit), R.drawable.kalanai));
+        arrLoc.add(new Location(getString(R.string.txt_muk), R.drawable.mkombu));
+        arrLoc.add(new Location(getString(R.string.txt_rock), R.drawable.rock));
 
-        CustomClass customClass = new CustomClass(this, arrLoc);
+        CustomClassAdapter customClassAdapter = new CustomClassAdapter(this, arrLoc);
         ListView lView = (ListView) findViewById(R.id.listView);
         if (lView != null) {
-            lView.setAdapter(customClass);
+            lView.setAdapter(customClassAdapter);
             lView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

@@ -16,7 +16,8 @@
         android:textSize="20sp"
         android:textColor="#b71c1c"
         android:background="#8BC34A"
-        android:text="@string/trichy" />
+        android:text="@string/trichy"
+        android:onClick="onClick"/>
 
     <TextView
         android:id="@+id/tvTwo"
@@ -27,7 +28,8 @@
         android:textSize="20sp"
         android:background="#FF9100"
         android:textColor="#b71c1c"
-        android:text="@string/chennai" />
+        android:text="@string/chennai"
+        android:onClick="onClick"/>
 
     <TextView
         android:id="@+id/tvThree"
@@ -38,7 +40,8 @@
         android:gravity="center"
         android:background="#795548"
         android:textColor="#64DD17"
-        android:text="@string/madurai" />
+        android:text="@string/madurai"
+        android:onClick="onClick"/>
 
     <TextView
         android:id="@+id/tvFour"
@@ -49,5 +52,6 @@
         android:textSize="20sp"
         android:background="#827717"
         android:textColor="#64DD17"
-        android:text="@string/coimbatore" />
+        android:text="@string/coimbatore"
+        android:onClick="onClick"/>
 </LinearLayout>

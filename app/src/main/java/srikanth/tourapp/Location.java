@@ -2,11 +2,11 @@ package srikanth.tourapp;
 
 
 
-public class LocList {
+public class Location {
     private  String location;
     private int img;
 
-    public LocList(String location, int img) {
+    public Location(String location, int img) {
         this.location = location;
         this.img = img;
     }

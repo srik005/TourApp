@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginLeft="8dp"
@@ -10,5 +10,5 @@
     android:layout_height="wrap_content"
     android:textSize="18sp"
     android:textColor="@color/colorPrimary"
-    android:text="Kallanai (also known as the Grand Anicut) is an ancient dam, which is built (in running water) across the Kaveri River in Trichy District in the state of Tamil Nadu in South India.Located at a distance of 15 km from Tiruchirapalli, the dam was originally constructed by the Chola king Karikalan around the 2nd Century AD and is considered to be one of the oldest water-diversion or water-regulator structures in the world which is still in use.\nThe dam was originally built by Karikala Chola around second century AD.[4][5] The idea behind constructing the dam was to divert the river to the delta districts thereby boosting irrigation.[4] The dam was re-modeled by the British during the 19th century. In 1804, captain Caldwell, a military engineer was appointed by the British to make a study on the Kaveri river and promote irrigation for the delta region"/>
-</LinearLayout>
+    android:text="@string/str_kal_description"/>
+</ScrollView>

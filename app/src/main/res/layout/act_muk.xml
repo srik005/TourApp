@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginLeft="8dp"
@@ -12,12 +12,6 @@
         android:layout_height="wrap_content"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
-        android:text="The Upper Anaicut, (Tamil: மேலணை) also known as Mukkombu is a dam built on the Kaveri River in the state of Tamil Nadu in southern India.
+        android:text="@string/txt_muk_description"/>
 
-Upper Anaicut or Mukkombu is about 18 kilometers (11 mi) west of Trichy at a point where River Kollidam branches out from the main river, Cauvery. It is a lovely picnic spot skirting acres of verdant greenery. The place also has a well-manicured park. Mukkombu is about 685-meter long (2283 foot), and was built in the 19th century by Sir Arthur Cotton who drew inspiration from the 2nd century Kallanai dam (Grand Anicut) by the Cholas.
-
-The Kaveri river forms the boundary between the Erode and Salem districts. The Bhavani River joins the Kaveri at the town of Bhavani, where the Sangameswarar Temple, an important pilgrimage spot in Tamil Nadu, was built at the confluence of the two rivers.
-
-It breaks into two channels at the Upper Anaicut to form the island of Srirangam, which is enclosed in between the delta of Thanjavur (Tanjore), the garden of Tamil Nadu"/>
-
-</LinearLayout>
+</ScrollView>

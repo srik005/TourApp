@@ -21,16 +21,16 @@ public class MadActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
-        ArrayList<LocList> arrLoc = new ArrayList<>();
-        arrLoc.add(new LocList(getString(R.string.g_museum), R.drawable.gmuseum));
-        arrLoc.add(new LocList(getString(R.string.me_temple), R.drawable.meenak));
-        arrLoc.add(new LocList(getString(R.string.th_mahal), R.drawable.thirun));
-        arrLoc.add(new LocList(getString(R.string.sa_hills), R.drawable.samanar));
+        ArrayList<Location> arrLoc = new ArrayList<>();
+        arrLoc.add(new Location(getString(R.string.g_museum), R.drawable.gmuseum));
+        arrLoc.add(new Location(getString(R.string.me_temple), R.drawable.meenak));
+        arrLoc.add(new Location(getString(R.string.th_mahal), R.drawable.thirun));
+        arrLoc.add(new Location(getString(R.string.sa_hills), R.drawable.samanar));
 
-        CustomClass customClass = new CustomClass(this, arrLoc);
+        CustomClassAdapter customClassAdapter = new CustomClassAdapter(this, arrLoc);
         ListView lView = (ListView) findViewById(R.id.listView);
         if (lView != null) {
-            lView.setAdapter(customClass);
+            lView.setAdapter(customClassAdapter);
             lView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

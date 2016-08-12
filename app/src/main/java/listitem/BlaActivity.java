@@ -6,9 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 
 import srikanth.tourapp.R;
 
-/**
- * Created by E6420 on 8/10/2016.
- */
 public class BlaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
